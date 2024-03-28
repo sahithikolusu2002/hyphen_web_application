@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(assets/img/dsh_2.png); background-repeat: no-repeat;background-size: cover;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        .user-details {
+            margin-bottom: 20px;
+        }
+        .user-details label {
+            font-weight: bold;
+        }
+        .edit-button {
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Details</h2>
+    <div class="user-details">
+        <label for="username">Username:</label>
+        <div id="username">JohnDoe</div>
+    </div>
+    <div class="user-details">
+        <label for="email">Email:</label>
+        <div id="email">johndoe@example.com</div>
+    </div>
+    <div class="user-details">
+        <label for="phone">Phone:</label>
+        <div id="phone">123-456-7890</div>
+    </div>
+    <button class="edit-button" onclick="editDetails()">Edit Details</button>
+</div>
+
+<script>
+    function editDetails() {
+        // You can add logic here to enable editing of user details
+        alert('Edit functionality will be implemented here.');
+    }
+</script>
+
+</body>
+</html>

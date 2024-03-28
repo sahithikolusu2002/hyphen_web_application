@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(assets/img/dsh_3.png); 
+            background-repeat: no-repeat;
+            background-size: cover;;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            height: 700px; /* Adjust the maximum height */
+            overflow-y: auto; /* Add scrollbar if content exceeds height */
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px; /* Reduce margin between form groups */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 3px; /* Reduce margin below labels */
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px; /* Reduce padding for form fields */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 3px; /* Reduce margin above form fields */
+            margin-bottom: 8px; /* Reduce margin below form fields */
+        }
+
+        textarea {
+            height: 60px; /* Reduced height for textarea */
+            resize: vertical;
+        }
+
+        input[type="radio"] {
+            margin-right: 3px; /* Reduce margin between radio buttons */
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-group input[type="radio"] {
+            display: none;
+        }
+
+        .form-group input[type="radio"] + label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+       
+        .form-group input[type="radio"] + label:before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px; 
+            border: 1px solid #000; 
+            border-radius: 50%; 
+            margin-right: 5px; 
+        }
+
+       
+        .form-group input[type="radio"]:checked + label:before {
+            background-color: #000; 
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sexual-Related Mental Health Assessment Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="ethnicity">Ethnicity:</label>
+                <input type="text" id="ethnicity" name="ethnicity" required>
+            </div>
+            <div class="form-group">
+                <label for="experiences">Experiences with Gender Issues (Briefly describe):</label>
+                <textarea id="experiences" name="experiences" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
